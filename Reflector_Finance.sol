@@ -1,14 +1,4 @@
-// REFLECTOR.Finance: DeFi token with 12% reflect redistribution tax
 
-// ██████╗ ███████╗███████╗██╗     ███████╗ ██████╗████████╗ ██████╗ ██████╗ 
-// ██╔══██╗██╔════╝██╔════╝██║     ██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
-// ██████╔╝█████╗  █████╗  ██║     █████╗  ██║        ██║   ██║   ██║██████╔╝
-// ██╔══██╗██╔══╝  ██╔══╝  ██║     ██╔══╝  ██║        ██║   ██║   ██║██╔══██╗
-// ██║  ██║███████╗██║     ███████╗███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║
-// ╚═╝  ╚═╝╚══════╝╚═╝     ╚══════╝╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
-                                                                          
-// Reflector is a modified fork of RFI
-// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.6.0;
 
@@ -492,7 +482,7 @@ contract Ownable is Context {
 
 pragma solidity ^0.6.2;
 
-contract REFLECTOR is Context, IERC20, Ownable {
+contract ReFi is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
@@ -508,8 +498,8 @@ contract REFLECTOR is Context, IERC20, Ownable {
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private _name = 'reflector.finance';
-    string private _symbol = 'RFCTR';
+    string private _name = 'ReFi.io';
+    string private _symbol = 'ReFi';
     uint8 private _decimals = 9;
 
     constructor () public {
